@@ -26,7 +26,7 @@ public class UserService {
 		return obj.orElseThrow(() -> new ObjectNotFoundException("Objeto não encontrado"));
 	}
 	
-	public User inser(User obj) {
+	public User insert(User obj) {
 		return repository.insert(obj);
 	}
 	
